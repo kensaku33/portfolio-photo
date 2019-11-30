@@ -3,7 +3,6 @@
     <TheHeader/>
     <main class="contents">
       <nuxt/>
-      <TheHome/>
     </main>
     <TheFooter/>
   </div>

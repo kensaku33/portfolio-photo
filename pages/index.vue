@@ -3,20 +3,7 @@
     <section class="about">
       <h2>山添憲作</h2>
       <ArticleBody>
-        <img class="index-img" src="~/assets/landscape/IMG_9960.jpg" alt="夏目漱石">
-      </ArticleBody>
-    </section>
-
-    <section class="works">
-      <h2>代表作</h2>
-      <ArticleBody>
-        <p>『吾輩は猫である』（1905年）がデビュー作である。</p>
-        <ul>
-          <li>『吾輩は猫である』（1905年）</li>
-          <li>『坊っちゃん』（1906年）</li>
-          <li>『草枕』（1906年）</li>
-          <li>『三四郎』（1908年）</li>
-        </ul>
+        <img class="index-img" src="~/assets/landscape/IMG_9960.jpg" alt="琵琶湖">
       </ArticleBody>
     </section>
   </div>
@@ -42,40 +29,6 @@ export default {
 </script>
 
 <!-- <style>
-.index-img{
-  height: 300px;
-  width: auto;
-  object-fit: contain;
-}
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-  font-family: 'Sawarabi Mincho', sans-serif;
-}
-
-.links {
-  padding-top: 15px;
-}
 
 
 </style>
@@ -85,8 +38,7 @@ export default {
 <style scoped lang="scss">
   @import "~assets/scss/variables";
 
-  .about,
-  .works {
+  .about{
     h2 {
       display: flex;
       align-items: center;
@@ -102,5 +54,29 @@ export default {
         background-color: $color-black;
       }
     }
+  }
+  .index-img{
+    height: auto;
+    width: 100vw;
+    object-fit: contain;
+  }
+  .title {
+    font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    display: block;
+    font-weight: 300;
+    font-size: 100px;
+    color: #35495e;
+    letter-spacing: 1px;
+  }
+  .subtitle {
+    font-weight: 300;
+    font-size: 42px;
+    color: #526488;
+    word-spacing: 5px;
+    padding-bottom: 15px;
+    font-family: 'Sawarabi Mincho', sans-serif;
+  }
+  .links {
+    padding-top: 15px;
   }
 </style>
