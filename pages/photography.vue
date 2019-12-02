@@ -1,5 +1,5 @@
 <template>
 <div class="photo">
-  あああ
+  <TheHome/>
 </div>
 </template>

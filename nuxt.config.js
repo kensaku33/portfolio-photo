@@ -30,7 +30,12 @@ module.exports = {
 
   css: [
     'reset-css',
-    '~/assets/scss/style.scss'
+    '~/assets/scss/style.scss',
+    'swiper/dist/css/swiper.css'
+  ],
+
+  plugins: [
+    { src: '~plugins/vue-awesome-swiper', ssr: false }
   ],
 
   generate: {
@@ -43,6 +48,10 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
+    vendor: [
+      'vue-awesome-swiper'
+    ],
+
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
